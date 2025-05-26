@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Community Event Portal</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .eventCard {
+      border: 1px solid #aaa;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Community Portal</h1>
+
+  <!-- Filter & Search -->
+  <input type="text" id="searchInput" placeholder="Search events" />
+  <select id="categoryFilter">
+    <option value="">All</option>
+    <option value="music">Music</option>
+    <option value="tech">Tech</option>
+  </select>
+
+  <!-- Events will be loaded here -->
+  <div id="eventContainer"></div>
+
+  <!-- Registration Form -->
+  <form id="regForm">
+    <h3>Register for an Event</h3>
+    <input name="username" placeholder="Name" required />
+    <input name="email" type="email" placeholder="Email" required />
+    <select name="event">
+      <option value="Music Fest">Music Fest</option>
+      <option value="Tech Meetup">Tech Meetup</option>
+    </select>
+    <button type="submit" id="registerBtn">Register</button>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
