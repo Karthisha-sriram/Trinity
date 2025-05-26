@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Community Event Portal</title>
+
+  <!-- Internal CSS for body background -->
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Inline CSS for red heading -->
+  <h1 style="color: red;">Welcome to Your Local Event Hub</h1>
+
+  <header id="mainHeader">
+    <nav>
+      <ul class="navMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Submit</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Upcoming Events</h2>
+    <div class="eventCard">
+      <h3>Yoga in the Park</h3>
+      <p>Every Saturday at 8am in Central Park.</p>
+    </div>
+    <div class="eventCard">
+      <h3>Farmers Market</h3>
+      <p>Local produce and goods every Sunday.</p>
+    </div>
+  </section>
+
+  <section class="news">
+    <h2>Community Bulletin</h2>
+    <article>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus.</p>
+      <p>Community updates and news will appear in this two-column layout section.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>Admin Table</h2>
+    <table>
+      <tr>
+        <th>Event</th>
+        <th>Date</th>
+      </tr>
+      <tr>
+        <td>Clean-Up Drive</td>
+        <td>June 5</td>
+      </tr>
+      <tr>
+        <td>Food Festival</td>
+        <td>June 10</td>
+      </tr>
+    </table>
+  </section>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" style="outline: 2px solid blue;" />
+    <br/>
+    <input type="submit" value="Register" class="cta-button" />
+  </form>
+
+</body>
+</html>
