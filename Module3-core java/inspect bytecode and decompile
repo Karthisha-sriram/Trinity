@@ -1,0 +1,19 @@
+public class HelloWorld {
+    public void greet() {
+        System.out.println("Hello, bytecode!");
+    }
+
+    public static void main(String[] args) {
+        new HelloWorld().greet();
+    }
+}
+
+
+
+//javac HelloWorld.java
+//javap -c HelloWorld
+
+# Decompile a Class File
+
+// Write a simple Java program, compile it, and open the .class file in a decompiler.
+
